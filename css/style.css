@@ -83,7 +83,7 @@ nav ul li a:hover:after {
 .text-box {
     color: #fff;
     position: absolute;
-    bottom: 20%;
+    bottom: 5%;
 }
 .text-box p {
     font-size: 50px;
@@ -91,7 +91,7 @@ nav ul li a:hover:after {
 }
 @media (max-width: 767px){
     .text-box {
-        bottom: 1%;
+        bottom: 2%;
     }
     .text-box p {
         font-size: 20px;
@@ -99,7 +99,7 @@ nav ul li a:hover:after {
 }
 .text-box h1 {
     font-size: 190px;
-    line-height: 120px;
+    line-height: 160px;
     margin-left: -10px;
     text-transform: uppercase;
     color: transparent;
@@ -112,6 +112,7 @@ nav ul li a:hover:after {
 @media (max-width: 767px){
     .text-box h1 {
         font-size: 70px;
+        line-height: 100px;
     }
 }
 @keyframes back{
