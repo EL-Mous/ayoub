@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppsins', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(../image/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+    overflow: hidden;
+}
+@media (max-width: 767px){
+    .container {
+        height: 130vh;
+    }
+}
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo {
+    width: 200px;
+    cursor: pointer;
+    transition: .5s;
+}
+@media (max-width: 767px){
+    .logo {
+        width: 150px;
+        left: 50px;
+        margin: 10px auto 0;
+    }
+}
+.logo:hover {
+    width: 200px;
+}
+.cart-icon {
+    width: 30px;
+    cursor:pointer;
+}
+@media (max-width: 767px){
+    .cart-icon {
+        display: none;
+    }
+}
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+} 
+@media (max-width: 767px){
+    nav ul {
+        display: none;
+    }
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(0, 247, 255);
+    transition: .3s;
+}
+nav ul li a:hover:after {
+    width: 75%;
+
+}
+.text-box {
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+.text-box p {
+    font-size: 50px;
+    font-weight: 600;
+}
+@media (max-width: 767px){
+    .text-box {
+        bottom: 1%;
+    }
+    .text-box p {
+        font-size: 20px;
+    }
+}
+.text-box h1 {
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(../image/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@media (max-width: 767px){
+    .text-box h1 {
+        font-size: 70px;
+    }
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.text-box h3 {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+@media (max-width: 767px){
+    .text-box h3 {
+        font-size: 20px;
+    }
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.text-box a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid rgb(0, 247, 255);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 767px){
+    .text-box a {
+        display: inline-block;
+        margin: 10px 20px;
+    }
+}
+.social-icons {
+    position: absolute;
+    right: 5%;
+    bottom: 4%;
+}
+.social-icons img {
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+}
+@media (max-width: 767px){
+    .social-icons {
+        bottom: 1px;
+    }
+}
+.bubbles {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: -60px;
+   
+}
+.bubbles img {
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+@keyframes bubble{
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh);
+        opacity: 0;
+    }
+} 
+.bubbles img:nth-child(1) {
+    animation-delay: 2s;
+    width: 20px;
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 1s;
+    width: 30px;
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 3s;
+    width: 20px;
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 2s;
+    width: 35px;
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 7s;
+    width: 60px;
+}
+.bubbles img:nth-child(7) {
+    animation-delay: 5s;
+    width: 25px;
+}
+@media (max-width: 767px){
+    .bubbles img:nth-child(7) {
+        display: none;
+    }
+}
